@@ -53,10 +53,10 @@ fun OnboardingPage(page: Page, modifier: Modifier = Modifier) {
 }
 
 @Preview(showBackground = true, showSystemUi = true)
-@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showSystemUi = false)
 @Composable
 fun OnboardingPreview() {
     NewsAppTheme {
-        OnboardingPage(page = pages.get(0))
+        OnboardingPage(page = pages.get(1))
     }
 }
